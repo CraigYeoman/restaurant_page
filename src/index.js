@@ -89,8 +89,9 @@ function mainContent() {
     mainContent.appendChild(description);
     //Image
     const image = document.createElement('img');
-    image.src = "http://www.google.com/intl/en_com/images/logo_plain.png";
+    image.src = "img/restaurant.jpg";
     mainContent.appendChild(image);
+    
     //
     return mainContent;
 }
@@ -103,17 +104,19 @@ function footer() {
     container.appendChild(socialLinks);
     //Social Links
     const facebook = document.createElement('img');
-    facebook.src = "";
+    facebook.classList = 'svg';
+    facebook.src = "svg/facebook.svg";
     socialLinks.appendChild(facebook);
     const insta = document.createElement('img');
-    insta.src = "";
+    insta.src = "svg/instagram.svg";
     socialLinks.appendChild(insta);
     const twitter = document.createElement('img');
-    twitter.src = "";
+    twitter.src = "svg/twitter.svg";
     socialLinks.appendChild(twitter);
     //Copy Right
     const copyRight = document.createElement('div');
     copyRight.textContent = 'Waffle Bros c 2022. All rights waffled'
+    copyRight.classList = 'copy-right'
     container.appendChild(copyRight);
     return container
 }
