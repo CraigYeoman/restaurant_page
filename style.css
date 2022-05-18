@@ -1,3 +1,38 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: crimson;
+}
+
 .title {
-    font-size: 2rem;
+    font-size: 3rem;  
+}
+
+.tabs-container {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links {
+    display: flex;
+    column-gap: .8rem;
+}
+
+.copy-right {
+    display: flex;
+    text-align: right;
 }
