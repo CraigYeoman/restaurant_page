@@ -19,7 +19,6 @@ function header() {
     //Header
     let header = document.createElement('div');
     header.className = 'header';
-    
     //Title
     let title = document.createElement('div');
     title.className = 'title'
@@ -28,6 +27,7 @@ function header() {
     //Tabs Container
     const tabsContainer = document.createElement('div');
     tabsContainer.className = 'tabs-container';
+    const content = document.querySelector('.content');
     //Home
     const home = document.createElement('button');
     home.className = 'tab';
@@ -38,7 +38,9 @@ function header() {
         e.target.className = 'active';
         menu.className = 'tab'
         contact.className = 'tab'
+        removeFooter();
         homePage();
+        content.appendChild(footer());
     })
     //Menu
     const menu = document.createElement('button');
@@ -50,7 +52,9 @@ function header() {
         e.target.className = 'active';
         home.className = 'tab'
         contact.className = 'tab'
+        removeFooter();
         menuPage();
+        content.appendChild(footer());
     })
     //Contact
     const contact = document.createElement('button');
@@ -62,7 +66,9 @@ function header() {
         e.target.className = 'active';
         home.className = 'tab'
         menu.className = 'tab'
+        removeFooter();
         contactsPage();
+        content.appendChild(footer());
     })
 
     header.appendChild(tabsContainer);
@@ -111,8 +117,17 @@ function footer() {
     return container
 }
 
+function removeFooter() {
+    const footer = document.querySelector('.footer')
+    footer.remove();
+}
+
 function homePage() {
     console.log('home')
+    const main = document.querySelector('.main');
+    const content = document.querySelector('.content');
+    main.remove();
+    content.appendChild(mainContent());
 }
 
 
