@@ -1,18 +1,71 @@
+:root {
+    --main-background-color: #FBBF24;
+    --main-text-color: #18181B;
+    --header-background-color: #18181B;
+    --header-text-color: #FBBF24;
+}
+
+@font-face {
+    font-family: title;
+    src: url(fonts/AmericanCaptain.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-background-color);
+}
+
 .header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: crimson;
+    background-color: var(--header-background-color);
 }
 
 .title {
-    font-size: 3rem;  
+    font-size: 5rem;  
+    color: var(--header-text-color);
+    font-family: title;
+    margin-bottom: -10px;
 }
 
 .tabs-container {
     display: flex;
     column-gap: 1.5rem;
     margin-bottom: 10px;
+}
+
+.tab {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 0px;
+    font-family: title;
+    font-size: 27px;
+    padding-top: 7px;
+}
+
+.active {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 5px solid;
+    font-family: title;
+    font-size: 27px;
+    padding-top: 7px;
+    border-color: aliceblue;
 }
 
 .main {
@@ -24,12 +77,16 @@
 
 .description {
     margin-bottom: 10px;
+    font-weight: bolder;
+    color: var(--main-text-color);
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
 }
 
 .social-links {
@@ -38,8 +95,13 @@
 }
 
 .copy-right {
-    display: flex;
     text-align: right;
+    font-weight: bold;
+    color: var(--main-text-color);
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .waffle-container {
@@ -54,6 +116,7 @@
     margin-bottom: 10px;
     text-align: center;
     margin-top: 0;
+    color: var(--main-text-color);
 }
 
 .waffle-image {
@@ -62,12 +125,16 @@
 
 .waffle-credit {
     position: relative;
-bottom: 40px;
-right: -50%;
-transform: translate(-50%, -50%);
-color: white;
-background: black;
-width: max-content;
-margin-bottom: 0px;
-
+    bottom: 40px;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: var(--header-background-color);
+    width: max-content;
+    margin-bottom: 0px;
+    color: var(--header-text-color);
+    border: 5px solid #18181B;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .9rem;
 }
