@@ -41,3 +41,33 @@
     display: flex;
     text-align: right;
 }
+
+.waffle-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -20px;
+}
+
+.waffle-text {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.waffle-image {
+    width: 100%;
+}
+
+.waffle-credit {
+    position: relative;
+bottom: 40px;
+right: -50%;
+transform: translate(-50%, -50%);
+color: white;
+background: black;
+width: max-content;
+margin-bottom: 0px;
+
+}
