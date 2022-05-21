@@ -31,7 +31,7 @@ function header() {
     //Home
     const home = document.createElement('button');
     home.className = 'tab';
-    home.textContent = 'Home';
+    home.textContent = 'HOME';
     tabsContainer.appendChild(home);
     home.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
@@ -81,7 +81,7 @@ function mainContent() {
     //Description
     const description = document.createElement('div');
     description.classList = 'description';
-    description.textContent = 'This is the best waffle place in town';
+    description.textContent = 'Where your waffle dreams come true';
     mainContent.appendChild(description);
     //Image
     const image = document.createElement('img');
