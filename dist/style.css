@@ -27,6 +27,7 @@ body {
     color: var(--header-text-color);
     font-family: title;
     margin-bottom: -10px;
+    padding-top: 15px;
 }
 
 .tabs-container {
